@@ -1,0 +1,29 @@
+[
+    {
+        "email": "argha.dhali.tpr@pwc.com",
+        "password": "Test@1234"
+    },
+    {
+        "email": "argha.d.tpr@pwc.com",
+        "password": "Test@1234"
+    },{
+        "email": "argha.dhali.tpr@pwc.comm",
+        "password": "Test@123"
+    },
+    {
+        "email": "",
+        "password": "Test@1234"
+    },
+    {
+        "email": "argha.dhali.tpr@pwc.com",
+        "password": ""
+    },
+    {
+        "email": "argha.dhali.tpr@pwc.com",
+        "password": "Test@1234"
+    },
+    {
+        "email": "argha.dhali.tpr@pwc.com",
+        "password": "Test@1234"
+    }
+]

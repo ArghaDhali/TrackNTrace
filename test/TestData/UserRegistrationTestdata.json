@@ -1,0 +1,132 @@
+[
+    {
+        "firstName": "Argha",
+        "lastName": "Dhali",
+        "emailId": "argha.dhali.tpr@pwc.com",
+        "phoneNumber": "8013425152",
+        "states": "Bihar",
+        "userRoles": "Manufacturer",
+        "enterPassword": "Test@1234",
+        "confirmPassword": "Test@1234"
+    },
+    {
+        "firstName": "",
+        "lastName": "Dhali",
+        "emailId": "argha.dhali.tpr@pwc.com",
+        "phoneNumber": "8013425152",
+        "states": "Bihar",
+        "userRoles": "Manufacturer",
+        "enterPassword": "Test@1234",
+        "confirmPassword": "Test@1234"
+    },
+    {
+        "firstName": "Argha",
+        "lastName": "",
+        "emailId": "argha.dhali.tpr@pwc.com",
+        "phoneNumber": "8013425152",
+        "states": "Bihar",
+        "userRoles": "Manufacturer",
+        "enterPassword": "Test@1234",
+        "confirmPassword": "Test@1234"
+    },
+    {
+        "firstName": "Argha",
+        "lastName": "Dhali",
+        "emailId": "",
+        "phoneNumber": "8013425152",
+        "states": "Bihar",
+        "userRoles": "Manufacturer",
+        "enterPassword": "Test@1234",
+        "confirmPassword": "Test@1234"
+    },
+    {
+        "firstName": "Argha",
+        "lastName": "Dhali",
+        "emailId": "argha.dhali.tpr@pwc.com",
+        "phoneNumber": "",
+        "states": "Bihar",
+        "userRoles": "Manufacturer",
+        "enterPassword": "Test@1234",
+        "confirmPassword": "Test@1234"
+    },
+    {
+        "firstName": "Argha",
+        "lastName": "Dhali",
+        "emailId": "argha.dhali.tpr@pwc.com",
+        "phoneNumber": "8013425152",
+        "states": "Bihar",
+        "userRoles": "Manufacturer",
+        "enterPassword": "",
+        "confirmPassword": "Test@1234"
+    },
+    {
+        "firstName": "Argha",
+        "lastName": "Dhali",
+        "emailId": "argha.dhali.tpr@pwc.com",
+        "phoneNumber": "8013425152",
+        "states": "Bihar",
+        "userRoles": "Manufacturer",
+        "enterPassword": "Test@1234",
+        "confirmPassword": ""
+    },
+    {
+        "firstName": "Argha@",
+        "lastName": "Dhali",
+        "emailId": "argha.dhali.tpr@pwc.com",
+        "phoneNumber": "8013425152",
+        "states": "Bihar",
+        "userRoles": "Manufacturer",
+        "enterPassword": "Test@1234",
+        "confirmPassword": "Test@1234"
+    },
+    {
+        "firstName": "Argha",
+        "lastName": "Dhali@",
+        "emailId": "argha.dhali.tpr@pwc.com",
+        "phoneNumber": "8013425152",
+        "states": "Bihar",
+        "userRoles": "Manufacturer",
+        "enterPassword": "Test@1234",
+        "confirmPassword": "Test@1234"
+    },
+    {
+        "firstName": "Argha",
+        "lastName": "Dhali",
+        "emailId": "argha.dhali.tpr@@pwc.com",
+        "phoneNumber": "8013425152",
+        "states": "Bihar",
+        "userRoles": "Manufacturer",
+        "enterPassword": "Test@1234",
+        "confirmPassword": "Test@1234"
+    },
+    {
+        "firstName": "Argha",
+        "lastName": "Dhali",
+        "emailId": "argha.dhali.tpr@pwc.com",
+        "phoneNumber": "801342515",
+        "states": "Bihar",
+        "userRoles": "Manufacturer",
+        "enterPassword": "Test@1234",
+        "confirmPassword": "Test@1234"
+    },
+    {
+        "firstName": "Argha",
+        "lastName": "Dhali",
+        "emailId": "argha.dhali.tpr@pwc.com",
+        "phoneNumber": "8013425152",
+        "states": "",
+        "userRoles": "Manufacturer",
+        "enterPassword": "Test@1234",
+        "confirmPassword": "Test@1234"
+    },
+    {
+        "firstName": "Argha",
+        "lastName": "Dhali",
+        "emailId": "argha.dhali.tpr@pwc.com",
+        "phoneNumber": "8013425152",
+        "states": "Bihar",
+        "userRoles": "",
+        "enterPassword": "Test@1234",
+        "confirmPassword": "Test@1234"
+    }
+]
