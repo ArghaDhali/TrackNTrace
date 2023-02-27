@@ -329,7 +329,7 @@ describe.only('Create Order Tokens', () =>{
 
     //This it block is excute for validate create order tokens
 
-    it.only('Validate create order tokens', async () => { 
+    it('Validate create order tokens', async () => { 
 
         await CreateOrderTokensPage.CreateOrderTokens()
         await CreateOrderTokensPage.checkHeading('Create Order Tokens')
