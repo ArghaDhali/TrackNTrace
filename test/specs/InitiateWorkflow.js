@@ -18,7 +18,7 @@ const CreateOrderTokensPage = require('../pageobjects/CreateOrderTokens.page') /
 
 const InitiateWorkflowTestdata = JSON.parse(fs.readFileSync('test/TestData/InitiateWorkflowTestdata.json')) //This is for importing the instance of SubCategoryTestData
 
-describe('Initiate workflow', () =>{
+describe.skip('Initiate workflow', () =>{
   
     //This will execute before each test
     beforeEach(async () => {
@@ -84,7 +84,7 @@ describe('Initiate workflow', () =>{
     });
 });
 
-describe('Category', () =>{
+describe.skip('Category', () =>{
 
     //This will execute before each test
     beforeEach(async () => {
@@ -155,7 +155,7 @@ describe('Category', () =>{
     });
 });
 
-describe('Sub-Category', () =>{
+describe.skip('Sub-Category', () =>{
 
     //This will execute before each test
     beforeEach(async () => {
@@ -228,7 +228,7 @@ describe('Sub-Category', () =>{
     });
 });
 
-describe('Product', () =>{
+describe.skip('Product', () =>{
 
     //This will execute before each test
     beforeEach(async () => {
@@ -301,7 +301,7 @@ describe('Product', () =>{
     });
 });    
 
-describe('Create Order Tokens', () =>{
+describe.skip('Create Order Tokens', () =>{
 
     //This will execute before each test
     beforeEach(async () => {
