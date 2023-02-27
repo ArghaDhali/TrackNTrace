@@ -10,7 +10,7 @@ const fs = require('fs') //This is for read JSON file
 
 const LoginTestdata = JSON.parse(fs.readFileSync('test/TestData/LoginTestdata.json')) //This for importing the instance of LoginData
 
-describe('Login', () => {
+describe.only('Login', () => {
 
     //This will execute before each test
     beforeEach(async () => {
