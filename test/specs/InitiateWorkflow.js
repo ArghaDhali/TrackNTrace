@@ -301,7 +301,7 @@ describe('Product', () =>{
     });
 });    
 
-describe.only('Create Order Tokens', () =>{
+describe('Create Order Tokens', () =>{
 
     //This will execute before each test
     beforeEach(async () => {
