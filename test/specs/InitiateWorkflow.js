@@ -357,5 +357,6 @@ describe.only('Create Order Tokens', () =>{
         await CreateOrderTokensPage.Product()
         await CreateOrderTokensPage.BatchNumberValidation('Batch Number is required')
         await DashboardPage.logout('Logout')
+        await DashboardPage.logout('Logout')
     });
 });    
