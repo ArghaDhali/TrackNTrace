@@ -301,7 +301,7 @@ describe.skip('Product', () =>{
     });
 });    
 
-describe.skip('Create Order Tokens', () =>{
+describe.only('Create Order Tokens', () =>{
 
     //This will execute before each test
     beforeEach(async () => {
@@ -334,7 +334,28 @@ describe.skip('Create Order Tokens', () =>{
         await CreateOrderTokensPage.CreateOrderTokens()
         await CreateOrderTokensPage.checkHeading('Create Order Tokens')
         await CreateOrderTokensPage.Category()
-        
+        await CreateOrderTokensPage.SubCategory()
+        await CreateOrderTokensPage.Product()
+        await CreateOrderTokensPage.BatchNumber(InitiateWorkflowTestdata[0].batchNumber)
+        await CreateOrderTokensPage.ItemTitle(InitiateWorkflowTestdata[0].itemTitle)
+        await CreateOrderTokensPage.Description(InitiateWorkflowTestdata[0].description)
+        await CreateOrderTokensPage.AddAttributes()
+        await CreateOrderTokensPage.PropertiesName(InitiateWorkflowTestdata[0].propertiesName)
+        await CreateOrderTokensPage.Value(InitiateWorkflowTestdata[0].value)
+        //await CreateOrderTokensPage.Submit()
+        await DashboardPage.logout('Logout')
+    });
+
+    //This it block is excute for validate that batch number is required
+
+    it.only('Validate that batch number is required', async () => {
+
+        await CreateOrderTokensPage.CreateOrderTokens()
+        await CreateOrderTokensPage.checkHeading('Create Order Tokens')
+        await CreateOrderTokensPage.Category()
+        await CreateOrderTokensPage.SubCategory()
+        await CreateOrderTokensPage.Product()
+        await CreateOrderTokensPage.BatchNumberValidation('Batch Number is required')
         await DashboardPage.logout('Logout')
     });
 });    

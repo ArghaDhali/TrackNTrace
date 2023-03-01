@@ -2,6 +2,11 @@
     {
         "categoryName": "ELECTRONICS23",
         "subCategoryName": "Mobile",
-        "productName": "Akbar and Birbal"
+        "productName": "Akbar and Birbal",
+        "batchNumber": "ABC123a",
+        "itemTitle": "Electronics",
+        "description": "This is a gaming laptop.",
+        "propertiesName": "SSD",
+        "value": "512 GB"
     }
 ]

@@ -1,0 +1,125 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1677561154372' stop='1677561181559'>
+    <name>Create Order Tokens</name>
+    <title>Create Order Tokens</title>
+    <test-cases>
+        <test-case start='1677561154372' status='broken' stop='1677561181558'>
+            <name>Validate that batch number must contain at least one lowercase character</name>
+            <title>Validate that batch number must contain at least one lowercase character</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='feature' value='Track and Trace Application Testing'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-110.0.5481.178'/>
+                <parameter kind='argument' name='browser' value='chrome-110.0.5481.178'/>
+            </parameters>
+            <steps>
+                <step start='1677561159178' status='passed' stop='1677561159178'>
+                    <name>Brower has been opened successfully</name>
+                    <title>Brower has been opened successfully</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677561159976' status='passed' stop='1677561159976'>
+                    <name>User has entered username and password</name>
+                    <title>User has entered username and password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677561160341' status='passed' stop='1677561160341'>
+                    <name>User has clicking on the Remember me and LOGIN button</name>
+                    <title>User has clicking on the Remember me and LOGIN button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677561162078' status='passed' stop='1677561162078'>
+                    <name>Validate heading after login to the application in the dashboard page</name>
+                    <title>Validate heading after login to the application in the dashboard page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677561165354' status='passed' stop='1677561165354'>
+                    <name>Clicking on the initiate workflow dropdown</name>
+                    <title>Clicking on the initiate workflow dropdown</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677561167640' status='passed' stop='1677561167640'>
+                    <name>Click on the create order tokens button</name>
+                    <title>Click on the create order tokens button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677561167815' status='passed' stop='1677561167815'>
+                    <name>Validate the heading of the create order tokens page</name>
+                    <title>Validate the heading of the create order tokens page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677561170083' status='passed' stop='1677561170083'>
+                    <name>Click on the category dropdown box</name>
+                    <title>Click on the category dropdown box</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677561172330' status='passed' stop='1677561172330'>
+                    <name>Select the category</name>
+                    <title>Select the category</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677561174624' status='passed' stop='1677561174624'>
+                    <name>Click on the sub-category dropdown box</name>
+                    <title>Click on the sub-category dropdown box</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677561176879' status='passed' stop='1677561176879'>
+                    <name>Select the sub-category</name>
+                    <title>Select the sub-category</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677561179154' status='passed' stop='1677561179154'>
+                    <name>Click on the product dropdown box</name>
+                    <title>Click on the product dropdown box</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677561181395' status='passed' stop='1677561181395'>
+                    <name>Select the product</name>
+                    <title>Select the product</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='66c9403f-1b10-48c8-9a68-ea80bdeaf0d1-attachment.png' type='image/png' size='105694'/>
+                <attachment title='Screenshot' source='f8bc09e4-8edd-4769-8fe2-885805aa983e-attachment.png' type='image/png' size='105357'/>
+                <attachment title='Screenshot' source='3b75c4c2-2d77-45eb-a44e-9ebdee73c05f-attachment.png' type='image/png' size='191630'/>
+                <attachment title='Screenshot' source='4bf7826c-9b1d-451d-af4e-31448a38064f-attachment.png' type='image/png' size='108742'/>
+                <attachment title='Screenshot' source='26537b9b-dff4-4f55-90ff-e8dea9e75d8b-attachment.png' type='image/png' size='118478'/>
+                <attachment title='Screenshot' source='916b6eeb-ecd1-4e9c-8408-c5d0ff243bb1-attachment.png' type='image/png' size='118478'/>
+                <attachment title='Screenshot' source='9b44352e-b324-47fe-a704-bd8ec24bc730-attachment.png' type='image/png' size='115695'/>
+                <attachment title='Screenshot' source='ab02b8e9-1f83-45f2-9d34-73a17221845d-attachment.png' type='image/png' size='114805'/>
+                <attachment title='Screenshot' source='584055f1-6d20-4ac3-b5b8-847c9ea3e9c4-attachment.png' type='image/png' size='113801'/>
+                <attachment title='Screenshot' source='ed0fcd81-8eee-4a37-8ca3-d371484952cf-attachment.png' type='image/png' size='113689'/>
+                <attachment title='Screenshot' source='9dcdf451-2e9b-4ff7-a58f-3aec883ecc1e-attachment.png' type='image/png' size='112593'/>
+                <attachment title='Screenshot' source='3d2eb78d-c425-47ce-8697-6b4c13e133d2-attachment.png' type='image/png' size='110760'/>
+                <attachment title='Screenshot' source='1cea7e98-0400-41c3-9629-36896561e59e-attachment.png' type='image/png' size='110760'/>
+            </attachments>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'batchNumber')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'batchNumber')
+                    at Context.&lt;anonymous> (C:\Users\argha\WebDriverIO-TrackNTrace\test\specs\InitiateWorkflow.js:426:77)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

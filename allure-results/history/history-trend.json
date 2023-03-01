@@ -1,1 +1,1 @@
-[{"buildOrder":4,"reportUrl":"nulljob/WDIOTest/4/allure","reportName":"AllureReport","data":{"failed":1,"broken":6,"skipped":0,"passed":4,"unknown":0,"total":11}}]
+[{"buildOrder":10,"reportUrl":"nulljob/WDIOTest/10/allure","reportName":"AllureReport","data":{"failed":1,"broken":4,"skipped":0,"passed":14,"unknown":0,"total":19}},{"buildOrder":4,"reportUrl":"nulljob/WDIOTest/4/allure","reportName":"AllureReport","data":{"failed":1,"broken":6,"skipped":0,"passed":4,"unknown":0,"total":11}}]

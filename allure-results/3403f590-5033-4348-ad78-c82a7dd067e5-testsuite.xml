@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1677672880182' stop='1677672887034'>
+    <name>Create Order Tokens</name>
+    <title>Create Order Tokens</title>
+    <test-cases>
+        <test-case start='1677672880182' status='broken' stop='1677672887033'>
+            <name>"before each" hook for Create Order Tokens</name>
+            <title>"before each" hook for Create Order Tokens</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='feature' value='Track and Trace Application Testing'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-110.0.5481.178'/>
+                <parameter kind='argument' name='browser' value='chrome-110.0.5481.178'/>
+            </parameters>
+            <steps>
+                <step start='1677672884701' status='passed' stop='1677672884701'>
+                    <name>Brower has been opened successfully</name>
+                    <title>Brower has been opened successfully</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677672885530' status='passed' stop='1677672885530'>
+                    <name>User has entered username and password</name>
+                    <title>User has entered username and password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677672885980' status='passed' stop='1677672885980'>
+                    <name>User has clicking on the Remember me and LOGIN button</name>
+                    <title>User has clicking on the Remember me and LOGIN button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='8e46fee4-9961-4993-a0a9-fb63f7e9769f-attachment.png' type='image/png' size='105662'/>
+                <attachment title='Screenshot' source='bd4ce806-a7e8-45e8-bb8c-64a5eb39be98-attachment.png' type='image/png' size='105363'/>
+            </attachments>
+            <failure>
+                <message>no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=110.0.5481.178)</message>
+                <stack-trace>no such window: no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=110.0.5481.178)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Object.toHaveText (file:///C:/Users/argha/WebDriverIO-TrackNTrace/node_modules/expect-webdriverio/lib/matchers/element/toHaveText.js:12:14)
+                    at async DashboardPage.checkHeading (C:\Users\argha\WebDriverIO-TrackNTrace\test\pageobjects\Dashboard.page.js:80:9)
+                    at async Context.&lt;anonymous> (C:\Users\argha\WebDriverIO-TrackNTrace\test\specs\InitiateWorkflow.js:315:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
