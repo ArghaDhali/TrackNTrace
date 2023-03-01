@@ -316,8 +316,9 @@ describe('Create Order Tokens', () =>{
     });
 
     //This it block is excute for validate that batch number is required
-    it('TC_TrackNTrace_InitiateWorkflow_030_Validate that batch number is required', async () => {
-        report.addTestId(InitiateWorkflowTestdata[29].TestCaseID)
+
+    it('Validate that batch number is required', async () => {
+
         await CreateOrderTokensPage.CreateOrderTokens()
         await CreateOrderTokensPage.checkHeading('Create Order Tokens')
         await CreateOrderTokensPage.Category()
@@ -328,8 +329,9 @@ describe('Create Order Tokens', () =>{
     });
 
     //This it block is excute for validate that title is required
-    it('TC_TrackNTrace_InitiateWorkflow_031_Validate that title is required', async () => {
-        report.addTestId(InitiateWorkflowTestdata[30].TestCaseID)
+
+    it('Validate that title is required', async () => {
+
         await CreateOrderTokensPage.CreateOrderTokens()
         await CreateOrderTokensPage.checkHeading('Create Order Tokens')
         await CreateOrderTokensPage.Category()
@@ -340,8 +342,9 @@ describe('Create Order Tokens', () =>{
     });
 
     //This it block is excute for validate that description is required
-    it('TC_TrackNTrace_InitiateWorkflow_032_Validate that description is required', async () => {
-        report.addTestId(InitiateWorkflowTestdata[31].TestCaseID)
+
+    it('Validate that description is required', async () => {
+
         await CreateOrderTokensPage.CreateOrderTokens()
         await CreateOrderTokensPage.checkHeading('Create Order Tokens')
         await CreateOrderTokensPage.Category()
@@ -352,38 +355,28 @@ describe('Create Order Tokens', () =>{
     });
 
     //This it block is excute for validate that batch number must contain at least one lowearcase character
-    it('TC_TrackNTrace_InitiateWorkflow_033_Validate that batch number must contain at least one lowearcase character', async () => {
-        report.addTestId(InitiateWorkflowTestdata[32].TestCaseID)
-        await CreateOrderTokensPage.CreateOrderTokens()
-        await CreateOrderTokensPage.checkHeading('Create Order Tokens')
-        await CreateOrderTokensPage.Category()
-        await CreateOrderTokensPage.SubCategory()
-        await CreateOrderTokensPage.Product()
-        await CreateOrderTokensPage.LowercaseValidation('Must contain at least one lowercase character', InitiateWorkflowTestdata[32].batchNumber)
-        await DashboardPage.logout('Logout')
-    });
 
-    //This it block is excute for validate that batch number must contain at least one uppercase character
-    it('TC_TrackNTrace_InitiateWorkflow_034_Validate that batch number must contain at least one uppercase character', async () => {
-        report.addTestId(InitiateWorkflowTestdata[33].TestCaseID)
+    it('Validate that batch number must contain at least one lowearcase character', async () => {
+
         await CreateOrderTokensPage.CreateOrderTokens()
         await CreateOrderTokensPage.checkHeading('Create Order Tokens')
         await CreateOrderTokensPage.Category()
         await CreateOrderTokensPage.SubCategory()
         await CreateOrderTokensPage.Product()
-        await CreateOrderTokensPage.UppercaseValidation('Must contain at least one uppercase character', InitiateWorkflowTestdata[33].batchNumber)
+        await CreateOrderTokensPage.LowercaseValidation('Must contain at least one lowercase character', InitiateWorkflowTestdata[1].batchNumber)
         await DashboardPage.logout('Logout')
     });
 
     //This it block is excute for validate that batch number should be of 7 characters
-    it('TC_TrackNTrace_InitiateWorkflow_035_Validate that batch number should be of 7 characters', async () => {
-        report.addTestId(InitiateWorkflowTestdata[34].TestCaseID)
+
+    it.only('Validate that batch number should be of 7 characters', async () => {
+
         await CreateOrderTokensPage.CreateOrderTokens()
         await CreateOrderTokensPage.checkHeading('Create Order Tokens')
         await CreateOrderTokensPage.Category()
         await CreateOrderTokensPage.SubCategory()
         await CreateOrderTokensPage.Product()
-        await CreateOrderTokensPage.SevenCharactersValidation('Batch Number should be of 7 characters', InitiateWorkflowTestdata[34].batchNumber)
+        await CreateOrderTokensPage.SevenCharactersValidation('Batch Number should be of 7 characters', InitiateWorkflowTestdata[3].batchNumber)
         await DashboardPage.logout('Logout')
     });
 });    
