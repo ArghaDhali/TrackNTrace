@@ -82,6 +82,18 @@ class CreateOrderTokensPage{
         return $('div>div.css-1ha4th6:nth-child(1)') //css for outside
     }
 
+    get lowercaseValidation(){
+        return $("(//p[normalize-space()='Must contain at least one lowercase character'])[1]") //xpath for batch number must contain at least one lowercase character 
+    }
+
+    get uppercaseValidation(){
+        return $("(//p[normalize-space()='Must contain at least one uppercase character'])[1]") //xpath for batch number must contain at least one uppercase character
+    }
+
+    get sevenCharactersValidation(){
+        return $("(//p[normalize-space()='Batch Number should be of 7 characters'])[1]") //xpath for batch number should be of 7 characters 
+    }
+
     /*
     This method is to validate the heading of the create order tokens page
 
@@ -302,6 +314,115 @@ class CreateOrderTokensPage{
         await expect(this.batchNumberRequired).toHaveTextContaining(validationMessage) //validating batch number is required for create order tokens 
 
         report.addStep("Validate the batch number is required for create order tokens",await browser.takeScreenshot(),"passed")
+    }
+
+    /*
+    This method is for validate title is required for create order tokens
+
+    @param validationMessage - message which needs to be validated should be passed
+    */
+    async TitleValidation(validationMessage){
+
+        await this.itemTitleTextbox.click() //Clicking on the item title textbox
+
+        await browser.pause(2000) //Pause browser
+
+        report.addStep("Click on the item title textbox",await browser.takeScreenshot(),"passed")
+
+        await this.outside.click() //Clicking outside
+
+        await expect(this.titleRequired).toHaveTextContaining(validationMessage) //validating title is required for create order tokens 
+
+        report.addStep("Validate the title is required for create order tokens",await browser.takeScreenshot(),"passed")
+    }
+
+    /*
+    This method is for validate description is required for create order tokens
+
+    @param validationMessage - message which needs to be validated should be passed
+    */
+    async DescriptionValidation(validationMessage){
+
+        await this.descriptionTextbox.click() //Clicking on the description textbox
+
+        await browser.pause(2000) //Pause browser
+
+        report.addStep("Click on the description textbox",await browser.takeScreenshot(),"passed")
+
+        await this.outside.click() //Clicking outside
+
+        await expect(this.descriptionRequired).toHaveTextContaining(validationMessage) //validating description is required for create order tokens 
+
+        report.addStep("Validate the description is required for create order tokens",await browser.takeScreenshot(),"passed")
+    }
+
+    /*
+    This method is for validate batch number must contain at least one lowercase character
+
+    @param validationMessage - message which needs to be validate should be passed
+    @param batchNumber - batch number should be passed
+    */
+    async LowercaseValidation(validationMessage, batchNumber){
+
+        await this.batchNumberTextbox.click() //Clicking on the batch number textbox
+
+        await browser.pause(2000) //Pause browser
+
+        await this.batchNumberTextbox.setValue(batchNumber) //Enter the batch number
+
+        report.addStep("Click on the batch number textbox and enter the batch number",await browser.takeScreenshot(),"passed")
+
+        await this.outside.click() //Clicking outside
+
+        await expect(this.lowercaseValidation).toHaveTextContaining(validationMessage) //validating batch number must contain at least one lowercase character
+
+        report.addStep("Validate the batch number must contain at least one lowercase character",await browser.takeScreenshot(),"passed")
+    }
+
+    /*
+    This method is for validate batch number must contain at least one uppercase character
+
+    @param validationMessage - message which needs to be validate should be passed
+    @param batchNumber - batch number should be passed
+    */
+    async UppercaseValidation(validationMessage, batchNumber){
+
+        await this.batchNumberTextbox.click() //Clicking on the batch number textbox
+
+        await browser.pause(2000) //Pause browser
+
+        await this.batchNumberTextbox.setValue(batchNumber) //Enter the batch number
+
+        report.addStep("Click on the batch number textbox and enter the batch number",await browser.takeScreenshot(),"passed")
+
+        await this.outside.click() //Clicking outside
+
+        await expect(this.uppercaseValidation).toHaveTextContaining(validationMessage) //validating batch number must contain at least one uppercase character
+
+        report.addStep("Validate the batch number must contain at least one uppercase character",await browser.takeScreenshot(),"passed")
+    }
+
+    /*
+    This method is for validate batch number should be of 7 characters
+
+    @param validationMessage - message which needs to be validate should be passed
+    @param batchNumber - batch number should be passed
+    */
+    async SevenCharactersValidation(validationMessage, batchNumber){
+
+        await this.batchNumberTextbox.click() //Clicking on the batch number textbox
+
+        await browser.pause(2000) //Pause browser
+
+        await this.batchNumberTextbox.setValue(batchNumber) //Enter the batch number
+
+        report.addStep("Click on the batch number textbox and enter the batch number",await browser.takeScreenshot(),"passed")
+
+        await this.outside.click() //Clicking outside
+
+        await expect(this.sevenCharactersValidation).toHaveTextContaining(validationMessage) //validating batch number should be of 7 characters
+
+        report.addStep("Validate the batch number should be of 7 character",await browser.takeScreenshot(),"passed")
     }
 }
 module.exports = new CreateOrderTokensPage(); //This is for exporting the instance of CreateOrderTokensPage class

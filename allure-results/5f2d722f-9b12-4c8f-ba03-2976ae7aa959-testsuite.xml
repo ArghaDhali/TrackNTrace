@@ -1,0 +1,139 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1677734587453' stop='1677734619456'>
+    <name>Create Order Tokens</name>
+    <title>Create Order Tokens</title>
+    <test-cases>
+        <test-case start='1677734587453' status='passed' stop='1677734619455'>
+            <name>Validate that description is required</name>
+            <title>Validate that description is required</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='feature' value='Track and Trace Application Testing'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-110.0.5481.178'/>
+                <parameter kind='argument' name='browser' value='chrome-110.0.5481.178'/>
+            </parameters>
+            <steps>
+                <step start='1677734592249' status='passed' stop='1677734592249'>
+                    <name>Brower has been opened successfully</name>
+                    <title>Brower has been opened successfully</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677734593115' status='passed' stop='1677734593115'>
+                    <name>User has entered username and password</name>
+                    <title>User has entered username and password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677734593603' status='passed' stop='1677734593603'>
+                    <name>User has clicking on the Remember me and LOGIN button</name>
+                    <title>User has clicking on the Remember me and LOGIN button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677734595359' status='passed' stop='1677734595359'>
+                    <name>Validate heading after login to the application in the dashboard page</name>
+                    <title>Validate heading after login to the application in the dashboard page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677734598611' status='passed' stop='1677734598611'>
+                    <name>Clicking on the initiate workflow dropdown</name>
+                    <title>Clicking on the initiate workflow dropdown</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677734600869' status='passed' stop='1677734600869'>
+                    <name>Click on the create order tokens button</name>
+                    <title>Click on the create order tokens button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677734601037' status='passed' stop='1677734601037'>
+                    <name>Validate the heading of the create order tokens page</name>
+                    <title>Validate the heading of the create order tokens page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677734603297' status='passed' stop='1677734603297'>
+                    <name>Click on the category dropdown box</name>
+                    <title>Click on the category dropdown box</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677734605556' status='passed' stop='1677734605556'>
+                    <name>Select the category from dropdown</name>
+                    <title>Select the category from dropdown</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677734607827' status='passed' stop='1677734607827'>
+                    <name>Click on the sub-category dropdown box</name>
+                    <title>Click on the sub-category dropdown box</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677734610063' status='passed' stop='1677734610063'>
+                    <name>Select the sub-category from dropdown</name>
+                    <title>Select the sub-category from dropdown</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677734612340' status='passed' stop='1677734612340'>
+                    <name>Click on the product dropdown box</name>
+                    <title>Click on the product dropdown box</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677734614576' status='passed' stop='1677734614576'>
+                    <name>Select the product from dropdown</name>
+                    <title>Select the product from dropdown</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677734616806' status='passed' stop='1677734616806'>
+                    <name>Click on the description textbox</name>
+                    <title>Click on the description textbox</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677734617079' status='passed' stop='1677734617079'>
+                    <name>Validate the description is required for create order tokens</name>
+                    <title>Validate the description is required for create order tokens</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1677734619454' status='passed' stop='1677734619454'>
+                    <name>Clicking on the logout button</name>
+                    <title>Clicking on the logout button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='ce7f674b-4301-4c06-932c-2cd9fa32c5d5-attachment.png' type='image/png' size='105585'/>
+                <attachment title='Screenshot' source='4abcff7b-3ae8-4b04-92d3-703320b306c3-attachment.png' type='image/png' size='105525'/>
+                <attachment title='Screenshot' source='b7e364e6-037b-4b0a-ace9-51748f92b7d7-attachment.png' type='image/png' size='191630'/>
+                <attachment title='Screenshot' source='e95e4416-c650-47ff-9525-ae0a4ae0c63a-attachment.png' type='image/png' size='105571'/>
+                <attachment title='Screenshot' source='6e60728f-fa6c-48e7-902a-771f1e74e02c-attachment.png' type='image/png' size='118478'/>
+                <attachment title='Screenshot' source='7bbeb0ea-832c-4424-9480-34ba1d058f9c-attachment.png' type='image/png' size='118478'/>
+                <attachment title='Screenshot' source='afd9e3f0-4bf7-4432-aeae-8ac0ae8bbf47-attachment.png' type='image/png' size='113463'/>
+                <attachment title='Screenshot' source='4359bba4-8574-4768-bcc1-3f8bfd1c44ec-attachment.png' type='image/png' size='112546'/>
+                <attachment title='Screenshot' source='3d6f10b9-8f91-4af5-9a27-54f0799811e1-attachment.png' type='image/png' size='113801'/>
+                <attachment title='Screenshot' source='8e6ee78c-8505-45bf-a058-015fa6ac4053-attachment.png' type='image/png' size='113689'/>
+                <attachment title='Screenshot' source='2972ad94-91f8-4819-98ff-476c0c57beea-attachment.png' type='image/png' size='112593'/>
+                <attachment title='Screenshot' source='27a6da38-6e13-422f-a8f7-37e23c565b4a-attachment.png' type='image/png' size='110760'/>
+                <attachment title='Screenshot' source='f14f7877-f3dc-4544-b9fc-12b72c6fc927-attachment.png' type='image/png' size='110546'/>
+                <attachment title='Screenshot' source='38bf72f5-b21a-43c8-8fe5-ddc8f72d9a5c-attachment.png' type='image/png' size='111125'/>
+                <attachment title='Screenshot' source='ce1f9ac5-c7ab-44e5-be56-dc039f753423-attachment.png' type='image/png' size='116652'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

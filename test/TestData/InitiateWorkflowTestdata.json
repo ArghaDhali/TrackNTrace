@@ -8,5 +8,14 @@
         "description": "This is a gaming laptop.",
         "propertiesName": "SSD",
         "value": "512 GB"
+    },
+    {
+        "batchNumber": "1234567"
+    },
+    {
+        "batchNumber": "123456a"
+    },
+    {
+        "batchNumber": "ABC12a"
     }
 ]
