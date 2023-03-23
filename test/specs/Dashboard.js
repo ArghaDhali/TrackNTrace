@@ -63,7 +63,7 @@ describe('Dashboard', () => {
         await DistributorPage.checkHeading('Distributor Table')
         await DashboardPage.logout('Logout')
     });
-
+/*
     //This it block is excute for validate retailer button
     it.skip('TC_TrackNTrace_Dashboard_005_Validate retailer button', async () => {
         report.addTestId(DashboardTestdata[4].TestCaseID)
@@ -72,7 +72,7 @@ describe('Dashboard', () => {
         await RetailerPage.checkHeading('')
         await DashboardPage.logout('Logout')
     });
-
+*/
     //This it block is excute for validate category bookmark
     it('TC_TrackNTrace_Dashboard_006_Validate category bookmark', async () => {
         report.addTestId(DashboardTestdata[5].TestCaseID)
