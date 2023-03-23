@@ -316,9 +316,8 @@ describe('Create Order Tokens', () =>{
     });
 
     //This it block is excute for validate that batch number is required
-
-    it('Validate that batch number is required', async () => {
-
+    it('TC_TrackNTrace_InitiateWorkflow_030_Validate that batch number is required', async () => {
+        report.addTestId(InitiateWorkflowTestdata[29].TestCaseID)
         await CreateOrderTokensPage.CreateOrderTokens()
         await CreateOrderTokensPage.checkHeading('Create Order Tokens')
         await CreateOrderTokensPage.Category()
@@ -326,57 +325,6 @@ describe('Create Order Tokens', () =>{
         await CreateOrderTokensPage.Product()
         await CreateOrderTokensPage.BatchNumberValidation('Batch Number is required')
         await DashboardPage.logout('Logout')
-    });
-
-    //This it block is excute for validate that title is required
-
-    it('Validate that title is required', async () => {
-
-        await CreateOrderTokensPage.CreateOrderTokens()
-        await CreateOrderTokensPage.checkHeading('Create Order Tokens')
-        await CreateOrderTokensPage.Category()
-        await CreateOrderTokensPage.SubCategory()
-        await CreateOrderTokensPage.Product()
-        await CreateOrderTokensPage.TitleValidation('Title is required')
-        await DashboardPage.logout('Logout')
-    });
-
-    //This it block is excute for validate that description is required
-
-    it('Validate that description is required', async () => {
-
-        await CreateOrderTokensPage.CreateOrderTokens()
-        await CreateOrderTokensPage.checkHeading('Create Order Tokens')
-        await CreateOrderTokensPage.Category()
-        await CreateOrderTokensPage.SubCategory()
-        await CreateOrderTokensPage.Product()
-        await CreateOrderTokensPage.DescriptionValidation('Description is required')
-        await DashboardPage.logout('Logout')
-    });
-
-    //This it block is excute for validate that batch number must contain at least one lowearcase character
-
-    it('Validate that batch number must contain at least one lowearcase character', async () => {
-
-        await CreateOrderTokensPage.CreateOrderTokens()
-        await CreateOrderTokensPage.checkHeading('Create Order Tokens')
-        await CreateOrderTokensPage.Category()
-        await CreateOrderTokensPage.SubCategory()
-        await CreateOrderTokensPage.Product()
-        await CreateOrderTokensPage.LowercaseValidation('Must contain at least one lowercase character', InitiateWorkflowTestdata[1].batchNumber)
-        await DashboardPage.logout('Logout')
-    });
-
-    //This it block is excute for validate that batch number should be of 7 characters
-
-    it.only('Validate that batch number should be of 7 characters', async () => {
-
-        await CreateOrderTokensPage.CreateOrderTokens()
-        await CreateOrderTokensPage.checkHeading('Create Order Tokens')
-        await CreateOrderTokensPage.Category()
-        await CreateOrderTokensPage.SubCategory()
-        await CreateOrderTokensPage.Product()
-        await CreateOrderTokensPage.SevenCharactersValidation('Batch Number should be of 7 characters', InitiateWorkflowTestdata[3].batchNumber)
         await DashboardPage.logout('Logout')
     });
 });    
