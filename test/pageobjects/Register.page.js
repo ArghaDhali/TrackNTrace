@@ -104,6 +104,8 @@ class RegisterPage{
     @param lastName - last name should be passed
     @param emailId - email id should be passed
     @param phoneNumber - phone number should be passed
+    @param states - state should be passed
+    @param userRoles - user role should be passed
     @param enterPassword - enter password should be passed
     @param confirmPassword - confirm password should be passed
     */
@@ -139,6 +141,98 @@ class RegisterPage{
             const dropdownValue = await userRole[i].getText()
             if(dropdownValue.trim()==userRoles){
                 userRole[i].click();
+                break;
+            }
+        }
+
+        await this.enterPasswordTextbox.setValue(enterPassword) //Entering value into enter password textbox
+
+        await this.confirmPasswordTextbox.setValue(confirmPassword) //Entering value into confirm password textbox
+
+        report.addStep("User has entered first name, last name, email id, phone number, enter password, confirm password and selected state and user role",await browser.takeScreenshot(),"passed")
+
+        await this.registerButton.click() //Clicking on the register button
+
+        report.addStep("User has clicking on the register button",await browser.takeScreenshot(),"passed")
+    }
+
+    /*
+    This method is for register with out select the state into the application
+
+    @param firstName - first name should be passed
+    @param lastName - last name should be passed
+    @param emailId - email id should be passed
+    @param phoneNumber - phone number should be passed
+    @param userRoles - user roles should be passed
+    @param enterPassword - enter password should be passed
+    @param confirmPassword - confirm password should be passed
+    */
+    async register1(firstName, lastName, emailId, phoneNumber, userRoles, enterPassword, confirmPassword){
+
+        report.addFeature("Track and Trace Application Testing")
+
+        await this.firstNameTextbox.setValue(firstName) //Entering value into first name textbox
+
+        await this.lastNameTextbox.setValue(lastName) //Entering value into last name textbox
+
+        await this.emailTextbox.setValue(emailId) //Entering value into email textbox
+
+        await this.phoneNumberTextbox.setValue(phoneNumber) //Entering value into phone number textbox
+        
+        await this.userRoleDropdown.click() //Clicking on the user role dropdown
+
+        let userRole = await this.selectUserRole //Selecting User Role from dropdown
+        for( var i=0; i<userRole.length; i++){
+            console.log("DropdownValue : " + await userRole[i].getText())
+            const dropdownValue = await userRole[i].getText()
+            if(dropdownValue.trim()==userRoles){
+                userRole[i].click();
+                break;
+            }
+        }
+
+        await this.enterPasswordTextbox.setValue(enterPassword) //Entering value into enter password textbox
+
+        await this.confirmPasswordTextbox.setValue(confirmPassword) //Entering value into confirm password textbox
+
+        report.addStep("User has entered first name, last name, email id, phone number, enter password, confirm password and selected state and user role",await browser.takeScreenshot(),"passed")
+
+        await this.registerButton.click() //Clicking on the register button
+
+        report.addStep("User has clicking on the register button",await browser.takeScreenshot(),"passed")
+    }
+
+    /*
+    This method is for register with out select user role into the application
+
+    @param firstName - first name should be passed
+    @param lastName - last name should be passed
+    @param emailId - email id should be passed
+    @param phoneNumber - phone number should be passed
+    @param states - state should be passed
+    @param enterPassword - enter password should be passed
+    @param confirmPassword - confirm password should be passed
+    */
+    async register2(firstName, lastName, emailId, phoneNumber, states, enterPassword, confirmPassword){
+
+        report.addFeature("Track and Trace Application Testing")
+
+        await this.firstNameTextbox.setValue(firstName) //Entering value into first name textbox
+
+        await this.lastNameTextbox.setValue(lastName) //Entering value into last name textbox
+
+        await this.emailTextbox.setValue(emailId) //Entering value into email textbox
+
+        await this.phoneNumberTextbox.setValue(phoneNumber) //Entering value into phone number textbox
+
+        await this.stateDropdown.click() //Clicking on the state dropdown
+
+        let state = await this.selectState //Selecting State/UT from dropdown
+        for( var i=0; i<state.length; i++){
+            console.log("Dropdown Value : " + await state[i].getText())
+            const dropdownValue = await state[i].getText() 
+            if(dropdownValue.trim()==states){
+                state[i].click();
                 break;
             }
         }
@@ -248,6 +342,40 @@ class RegisterPage{
         await expect(this.userRoleValidation).toHaveTextContaining(validationMessage) //validating the validation message for user role is required for register
 
         report.addStep("Validate user role is required for register",await browser.takeScreenshot(),"passed")
+    }
+
+    /*
+    This method is for state has valid values
+    */
+    async StateHasValidValues(){
+
+        await this.stateDropdown.click() //Clicking on the state dropdown
+
+        await browser.pause(2000) //Pause browser
+
+        let state = await this.selectState
+
+        for(var i=0; i<state.length; i++) {
+
+            console.log("Dropdown Value : " + await state[i].getText())
+        }
+    }
+
+    /*
+    This method is for user role has valid values
+    */
+    async UserRoleHasValidValues(){
+
+        await this.userRoleDropdown.click() //Clicking on the user role dropdown
+
+        await browser.pause(2000) //Pause browser
+
+        let Role = await this.selectUserRole
+
+        for(var i=0; i<Role.length; i++) {
+
+            console.log("Dropdown Value : " + await Role[i].getText())
+        }
     }
 }
 module.exports = new RegisterPage(); //This is for exporting the instance of RegisterPage class

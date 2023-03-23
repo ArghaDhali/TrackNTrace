@@ -67,7 +67,23 @@ class DashboardPage{
     }
 
     get bulkOrderTokensDropdown(){
-        return $('a[class="w3-bar-item w3-sub-menu-link"]') //css for bulk order tokens dropdown
+        return $("(//button[normalize-space()='Bulk Order Tokens'])[1]") //xpath for bulk order tokens dropdown
+    }
+
+    get createBulkOrderTokensDropdown(){
+        return $('div[class="w3-dropdown-content w3-bar-block"]>a[href="/publishBulkArt"]') //css for create bulk order tokens dropdown
+    }
+
+    get uploadBulkDataDropsown(){
+        return $('div[class="w3-dropdown-content w3-bar-block"]>a[href="/uploadBulkData"]') //css for upload bulk tokens dropdown
+    }
+
+    get orderTokenTablesDropdown(){
+        return $('div[class="w3-sidebar w3-bar-block w3-card"]>a[href="/tokens"]') //css for order token tables
+    }
+
+    get distributorsDropdown(){
+        return $('a[href="/distributer"]') //css for distributor dropdown
     }
 
     /*
@@ -259,13 +275,65 @@ class DashboardPage{
     /*
     This method is for clicking on the bulk order tokens dropdown
     */
-    async bulkOrderTokens(){
+    async BulkOrderTokens(){
 
         await this.bulkOrderTokensDropdown.click() //Clicking on the bulk order tokens dropdown
 
         await browser.pause(2000) //Pause browser
 
         report.addStep("Clicking on the bulk order tokens dropdown",await browser.takeScreenshot(),"passed")
+
+    }
+
+    /*
+    This method is for clicking on the create bulk order tokens dropdown
+    */
+    async CreateBulkOrderTokens(){
+
+        await this.createBulkOrderTokensDropdown.click() //Clicking on the create bulk order tokens dropdown
+
+        await browser.pause(2000) //Pause browser
+
+        report.addStep("Clicking on the create bulk order tokens dropdown",await browser.takeScreenshot(),"passed")
+
+    }
+
+    /*
+    This method is for clicking on the upload bulk data dropdown
+    */
+    async UploadBulkData(){
+
+        await this.uploadBulkDataDropsown.click() //Clicking on the upload bulk data dropdown
+
+        await browser.pause(2000) //Pause browser
+
+        report.addStep("Clicking on the upload bulk data dropdown",await browser.takeScreenshot(),"passed")
+
+    }
+
+    /*
+    This method is for clicking on the order token tables dropdown
+    */
+    async OrderTokenTables(){
+
+        await this.orderTokenTablesDropdown.click() //Clicking on the bulk order tokens dropdown
+
+        await browser.pause(2000) //Pause browser
+
+        report.addStep("Clicking on the order token tables dropdown",await browser.takeScreenshot(),"passed")
+
+    }
+
+    /*
+    This method is for clicking on distributors dropdown
+    */
+    async Distributor(){
+
+        await this.distributorsDropdown.click() //Clicking on the distributors dropdown
+
+        await browser.pause(2000) //Pause browser
+
+        report.addStep("Clicking on the distributors dropdown",await browser.takeScreenshot(),"passed")
 
     }
 }

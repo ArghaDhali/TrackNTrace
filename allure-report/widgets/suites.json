@@ -1,1 +1,1 @@
-{"total":2,"items":[{"uid":"1a85855463aca3ea10b8fe0fcb3372b8","name":"Login","statistic":{"failed":2,"broken":2,"skipped":0,"passed":5,"unknown":0,"total":9}},{"uid":"18da065654171ad88da0a040d1470696","name":"Create Order Tokens","statistic":{"failed":1,"broken":2,"skipped":1,"passed":7,"unknown":0,"total":11}}]}
+{"total":1,"items":[{"uid":"1a85855463aca3ea10b8fe0fcb3372b8","name":"Login","statistic":{"failed":0,"broken":0,"skipped":0,"passed":8,"unknown":0,"total":8}}]}

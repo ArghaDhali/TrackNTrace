@@ -66,6 +66,10 @@ class CreateOrderTokensPage{
         return $('span[class="input-group-btn"]') //css for submit button
     }
 
+    get tokenAddedSucessfully(){
+        return $('h2[class="MuiTypography-root MuiTypography-h6 css-1anx036"]>b') //css for token added sucessfully message
+    }
+
     get batchNumberRequired(){
         return $("(//p[normalize-space()='Batch Number is required'])[1]") //xpath for batch number is required validation
     }
@@ -287,13 +291,28 @@ class CreateOrderTokensPage{
     /*
     This method is for clicking on the submit button
     */
-    async Submit(){
+    async Submit(validationMessage){
 
         await this.submitButton.click() //Clicking on the submit button
 
-        await browser.pause(2000) //Pause browser
+        await browser.pause(500000) //Pause browser
 
         report.addStep("Click on the submit button",await browser.takeScreenshot(),"passed")
+
+        //await expect(this.tokenAddedSucessfully).toHaveTextContaining(validationMessage)
+
+        await browser.waitUntil(
+            async () => (await (await this.tokenAddedSucessfully).getText()) === 'Token Added Successfully',
+            {
+                timeout: 5000,
+                timeoutMsg: 'Token is not added sucessfully'
+            }
+        );
+
+        const token = await this.tokenAddedSucessfully()
+        const tokenAdded = await token.getText()
+
+        report.addStep(`token : ${tokenAdded}`)
     }
 
     /*

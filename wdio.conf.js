@@ -28,8 +28,11 @@ exports.config = {
         //'./test/specs/UserRegistration.js'
         //'./test/specs/Login.js'
         //'./test/specs/Dashboard.js'
-        './test/specs/InitiateWorkflow.js'
+        //'./test/specs/InitiateWorkflow.js'
         //'./test/specs/BulkOrderTokens.js'
+        //'./test/specs/Distributors.js'
+        //'./test/specs/OrderTokenTables.js'
+        './test/specs/QRCode.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -109,7 +112,7 @@ exports.config = {
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 120000,
+    connectionRetryTimeout: 600000,
     //
     // Default request retries count
     connectionRetryCount: 3,
@@ -119,6 +122,18 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['chromedriver'],
+    /*
+    [services['image-comparison'], {
+        // Set the options for the image comparison service
+        baselineFolder: './tests/snapshots/baseline',
+        formatImageName: '{tag}-{logName}-{width}x{height}',
+        screenshotPath: './tests/snapshots/',
+        savePerInstance: true,
+        autoSaveBaseline: true,
+        blockOutStatusBar: true,
+        blockOutToolBar: true,
+      }]
+    */
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -154,7 +169,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 120000
+        timeout: 240000
     },
     //
     // =====

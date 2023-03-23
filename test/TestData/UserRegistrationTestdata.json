@@ -1,5 +1,6 @@
 [
     {
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_001",
         "firstName": "Argha",
         "lastName": "Dhali",
         "emailId": "argha.dhali.tpr@pwc.com",
@@ -10,6 +11,10 @@
         "confirmPassword": "Test@1234"
     },
     {
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_002"
+    },
+    {
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_003",
         "firstName": "",
         "lastName": "Dhali",
         "emailId": "argha.dhali.tpr@pwc.com",
@@ -20,6 +25,7 @@
         "confirmPassword": "Test@1234"
     },
     {
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_004",
         "firstName": "Argha",
         "lastName": "",
         "emailId": "argha.dhali.tpr@pwc.com",
@@ -30,6 +36,7 @@
         "confirmPassword": "Test@1234"
     },
     {
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_005",
         "firstName": "Argha",
         "lastName": "Dhali",
         "emailId": "",
@@ -40,6 +47,7 @@
         "confirmPassword": "Test@1234"
     },
     {
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_006",
         "firstName": "Argha",
         "lastName": "Dhali",
         "emailId": "argha.dhali.tpr@pwc.com",
@@ -50,6 +58,27 @@
         "confirmPassword": "Test@1234"
     },
     {
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_007",
+        "firstName": "Argha",
+        "lastName": "Dhali",
+        "emailId": "argha.dhali.tpr@pwc.com",
+        "phoneNumber": "8013425152",
+        "userRoles": "Manufacturer",
+        "enterPassword": "Test@1234",
+        "confirmPassword": "Test@1234"
+    },
+    {
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_008",
+        "firstName": "Argha",
+        "lastName": "Dhali",
+        "emailId": "argha.dhali.tpr@pwc.com",
+        "phoneNumber": "8013425152",
+        "states": "Bihar",
+        "enterPassword": "Test@1234",
+        "confirmPassword": "Test@1234"
+    },
+    {
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_009",
         "firstName": "Argha",
         "lastName": "Dhali",
         "emailId": "argha.dhali.tpr@pwc.com",
@@ -60,6 +89,7 @@
         "confirmPassword": "Test@1234"
     },
     {
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_010",
         "firstName": "Argha",
         "lastName": "Dhali",
         "emailId": "argha.dhali.tpr@pwc.com",
@@ -70,6 +100,7 @@
         "confirmPassword": ""
     },
     {
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_011",
         "firstName": "Argha@",
         "lastName": "Dhali",
         "emailId": "argha.dhali.tpr@pwc.com",
@@ -80,6 +111,7 @@
         "confirmPassword": "Test@1234"
     },
     {
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_012",
         "firstName": "Argha",
         "lastName": "Dhali@",
         "emailId": "argha.dhali.tpr@pwc.com",
@@ -90,6 +122,7 @@
         "confirmPassword": "Test@1234"
     },
     {
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_013",
         "firstName": "Argha",
         "lastName": "Dhali",
         "emailId": "argha.dhali.tpr@@pwc.com",
@@ -100,6 +133,7 @@
         "confirmPassword": "Test@1234"
     },
     {
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_014",
         "firstName": "Argha",
         "lastName": "Dhali",
         "emailId": "argha.dhali.tpr@pwc.com",
@@ -110,23 +144,9 @@
         "confirmPassword": "Test@1234"
     },
     {
-        "firstName": "Argha",
-        "lastName": "Dhali",
-        "emailId": "argha.dhali.tpr@pwc.com",
-        "phoneNumber": "8013425152",
-        "states": "",
-        "userRoles": "Manufacturer",
-        "enterPassword": "Test@1234",
-        "confirmPassword": "Test@1234"
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_015"
     },
     {
-        "firstName": "Argha",
-        "lastName": "Dhali",
-        "emailId": "argha.dhali.tpr@pwc.com",
-        "phoneNumber": "8013425152",
-        "states": "Bihar",
-        "userRoles": "",
-        "enterPassword": "Test@1234",
-        "confirmPassword": "Test@1234"
+        "TestCaseID": "TC_TrackNTrace_UserRegistration_016"
     }
 ]

@@ -74,7 +74,7 @@ class LoginPage{
         await expect(this.emailValidation).toHaveTextContaining(validationMessage) //validating the validation message for email id textbox
 
         report.addStep("Email is mandatory validation",await browser.takeScreenshot(),"passed")
-   }
+    }
 
    /*
     This method is to validate password is mandatory for login
@@ -86,7 +86,7 @@ class LoginPage{
         await expect(this.passwordValidation).toHaveTextContaining(validationMessage) //validating the validation message for password textbox
 
         report.addStep("Password is mandatory validation",await browser.takeScreenshot(),"passed")
-   }
+    }
 
    /*
    This method is for click on the forget password button
