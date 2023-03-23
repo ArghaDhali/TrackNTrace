@@ -1,3 +1,4 @@
+const report = require('@wdio/allure-reporter') //This is for importing the instance of Allure Reports
 const LoginPage = require('../pageobjects/Login.page') //This is for importing the instance of LoginPage class
 const DashboardPage = require('../pageobjects/Dashboard.page') //This is for importing the instance of DashboardPage class
 const fs = require('fs') //This is for read JSON file
