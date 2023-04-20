@@ -26,8 +26,8 @@ exports.config = {
     specs: [
         //'./test/specs/**/*.js'
         //'./test/specs/UserRegistration.js'
-        //'./test/specs/Login.js'
-        './test/specs/Dashboard.js'
+        './test/specs/Login.js'
+        //'./test/specs/Dashboard.js'
         //'./test/specs/InitiateWorkflow.js'
         //'./test/specs/BulkOrderTokens.js'
         //'./test/specs/Distributors.js'
