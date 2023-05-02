@@ -25,7 +25,7 @@ describe('Retailers', () => {
     });
 
     //This it block is excute for validate Retailers button
-    it('TC_TrackNTrace_Retailers_001_Validate Retailers button', async () => {
+    it.only('TC_TrackNTrace_Retailers_001_Validate Retailers button', async () => {
         report.addTestId(RetailersTestdata[0].TestCaseID)
         await RetailerPage.checkHeading('Retailer Table')
         await DashboardPage.logout('Logout') 
