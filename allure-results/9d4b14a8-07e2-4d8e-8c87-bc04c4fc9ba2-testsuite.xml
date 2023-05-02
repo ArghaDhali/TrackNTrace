@@ -1,0 +1,85 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1682671546025' stop='1682671561252'>
+    <name>Retailers</name>
+    <title>Retailers</title>
+    <test-cases>
+        <test-case start='1682671546026' status='broken' stop='1682671561251'>
+            <name>TC_TrackNTrace_Retailers_024_Validate page box</name>
+            <title>TC_TrackNTrace_Retailers_024_Validate page box</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='feature' value='Track and Trace Application Testing'/>
+                <label name='testId' value='TC_TrackNTrace_Retailers_024'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-112.0.5615.138'/>
+                <parameter kind='argument' name='browser' value='chrome-112.0.5615.138'/>
+            </parameters>
+            <steps>
+                <step start='1682671550718' status='passed' stop='1682671550718'>
+                    <name>Brower has been opened successfully</name>
+                    <title>Brower has been opened successfully</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1682671551515' status='passed' stop='1682671551515'>
+                    <name>User has entered username and password</name>
+                    <title>User has entered username and password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1682671552002' status='passed' stop='1682671552002'>
+                    <name>User has clicking on the Remember me and LOGIN button</name>
+                    <title>User has clicking on the Remember me and LOGIN button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1682671553207' status='passed' stop='1682671553207'>
+                    <name>Validate heading after login to the application in the dashboard page</name>
+                    <title>Validate heading after login to the application in the dashboard page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1682671556478' status='passed' stop='1682671556478'>
+                    <name>Clicking on the retailers</name>
+                    <title>Clicking on the retailers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1682671556705' status='passed' stop='1682671556705'>
+                    <name>Validate the heading of the retailer page</name>
+                    <title>Validate the heading of the retailer page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1682671558961' status='passed' stop='1682671558961'>
+                    <name>Click on the page box</name>
+                    <title>Click on the page box</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='bf3ce958-5ec7-414c-bb88-5fe160bef7dc-attachment.png' type='image/png' size='106345'/>
+                <attachment title='Screenshot' source='842e0164-7e34-44fc-8e0c-f32053d735ec-attachment.png' type='image/png' size='106299'/>
+                <attachment title='Screenshot' source='3e9d0435-0926-4a22-a9c4-eba6b86da3a6-attachment.png' type='image/png' size='167885'/>
+                <attachment title='Screenshot' source='15c0faf6-37b8-45c8-92a4-05c567818407-attachment.png' type='image/png' size='126502'/>
+                <attachment title='Screenshot' source='8ebd9466-fd7a-4758-a8b8-95397d9b2e8d-attachment.png' type='image/png' size='126502'/>
+                <attachment title='Screenshot' source='fa83eb9b-044a-4e05-9f8e-23d50066851e-attachment.png' type='image/png' size='127506'/>
+                <attachment title='Screenshot' source='d78098c4-3071-4b10-ad64-1e6fd025ef4b-attachment.png' type='image/png' size='127383'/>
+            </attachments>
+            <failure>
+                <message>The setValue/addValue command only take string or number values. If you like to use special characters, use the "keys" command.</message>
+                <stack-trace>Error: The setValue/addValue command only take string or number values. If you like to use special characters, use the "keys" command.
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async RetailerPage.PageValidation (C:\Users\argha\New folder\WebDriverIO-TrackNTrace_copy\Distributor\pageobject\Retailer.page.js:672:9)
+                    at async Context.&lt;anonymous> (C:\Users\argha\New folder\WebDriverIO-TrackNTrace_copy\Distributor\specs\Retailers.js:269:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -51,7 +51,7 @@ class CreateOrderTokensPage{
     }
 
     get addAttributesButton(){
-        return $('button.css-1h48b3') //css for add attributes button
+        return $("//button[normalize-space()='Add attributes']") //xpath for add attributes button
     }
 
     get propertiesNameTextbox(){
@@ -59,11 +59,19 @@ class CreateOrderTokensPage{
     }
 
     get valueTextbox(){
-        return $('input[placeholder="Enter value"]') //css for value textbox
+        return $('input[name="attributes.0.value"]') //css for value textbox
     }
 
     get submitButton(){
         return $('span[class="input-group-btn"]') //css for submit button
+    }
+
+    get closeButton(){
+        return $('center>button[type="button"]') //css for close button
+    }
+
+    get tokenAddedSucessfully(){
+        return $('h2[class="MuiTypography-root MuiTypography-h6 css-1anx036"]>b') //css for token added sucessfully message
     }
 
     get batchNumberRequired(){
@@ -223,7 +231,7 @@ class CreateOrderTokensPage{
 
         await browser.pause(2000) //Pause browser
 
-        report.addStep("Click on thr description textbox",await browser.takeScreenshot(),"passed")
+        report.addStep("Click on the description textbox",await browser.takeScreenshot(),"passed")
 
         await this.descriptionTextbox.setValue(description) //Entering the description
 
@@ -287,13 +295,29 @@ class CreateOrderTokensPage{
     /*
     This method is for clicking on the submit button
     */
-    async Submit(){
+    async Submit(validationMessage){
 
         await this.submitButton.click() //Clicking on the submit button
 
         await browser.pause(2000) //Pause browser
 
         report.addStep("Click on the submit button",await browser.takeScreenshot(),"passed")
+
+        await expect(this.tokenAddedSucessfully).toHaveTextContaining(validationMessage)
+
+        report.addStep("Token Added Sucessfully", await browser.takeScreenshot(),"passed")
+    }
+
+    /*
+    This method is for clicking on the submit button
+    */
+    async Close(){
+ 
+        await this.closeButton.click() //Clicking on the close button
+
+        await browser.pause(2000) //Pause browser
+
+        report.addStep("Click on the close button",await browser.takeScreenshot(),"passed")
     }
 
     /*
