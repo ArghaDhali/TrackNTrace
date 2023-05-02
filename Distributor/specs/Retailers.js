@@ -264,7 +264,7 @@ describe('Retailers', () => {
     });
 
     //This it block is excute for validate page box
-    it.skip('TC_TrackNTrace_Retailers_024_Validate page box', async () => {
+    it('TC_TrackNTrace_Retailers_024_Validate page box', async () => {
         report.addTestId(RetailersTestdata[23].TestCaseID)
         await RetailerPage.PageValidation(RetailersTestdata[24].pagenumber)
         await DashboardPage.logout('Logout')
